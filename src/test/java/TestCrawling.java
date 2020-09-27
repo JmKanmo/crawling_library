@@ -10,7 +10,7 @@ public class TestCrawling {
     @Test
     public void testSearch() throws IOException {
         // 간략화된 GET, POST
-        Document document = Jsoup.connect("https://www.google.com/maps/search/%EB%8F%99%EB%8C%80%EB%AC%B8").get();
+        Document document = Jsoup.connect("https://search.daum.net/search?w=tot&q=바보멍충이").get();
 //        Document google2 = Jsoup.connect("http://www.google.com").post();
 
 //        Connection.Response response = Jsoup.connect("http://www.google.com")
