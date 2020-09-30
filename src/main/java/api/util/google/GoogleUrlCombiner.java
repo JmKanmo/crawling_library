@@ -1,7 +1,7 @@
-package api.util;
+package api.util.google;
 
-public class UrlCombiner {
-    public static String getCombinedUrl(String site, String keyword, String type) {
+public class GoogleUrlCombiner {
+    public static String getCombinedSearchUrl(String site, String keyword, String type) {
         StringBuilder stringBuilder = new StringBuilder();
 
         stringBuilder.append(site)
