@@ -7,6 +7,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NonNull;
 
+import java.io.IOException;
+
 @Data
 @Builder
 public class GoogleSearchBuilder {
@@ -17,7 +19,7 @@ public class GoogleSearchBuilder {
     @Builder.Default
     private String type = "";
 
-    public String invokeCrawling() {
+    public String invokeCrawling() throws IOException {
         String url = GoogleUrlCombiner.getCombinedSearchUrl(GoogleCrawlingUtils.GOOGLE_SEARCH, keyword, type);
         return GoogleSearchCrawlingController.crawling(url);
     }
