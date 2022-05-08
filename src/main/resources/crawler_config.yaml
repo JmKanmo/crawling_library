@@ -1,0 +1,43 @@
+urls:
+  - https://www.google.com
+  - https://www.naver.com
+
+crawlers:
+  - site: google
+    url: https://www.google.com
+    search: search?
+    keyword: q
+    category: tbm
+    types:
+      - ''
+      - isch
+      - vid
+      - nws
+      - shop
+      - bks
+
+  - site: naver
+    url: https://search.naver.com/
+    search: search.naver?
+    keyword: query
+    category: where
+    types:
+      - nexearch
+      - image
+      - view
+      - kin
+      - influencer
+      - video
+      - news
+      - kdic
+
+  - site: daum
+    url: https://search.daum.net/
+    search: search?
+    keyword: q
+    category: w
+    types:
+      - tot
+      - vclip
+      - fusion
+      - kstory

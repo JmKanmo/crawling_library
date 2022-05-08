@@ -1,5 +1,5 @@
-package api.util.google;
+package api.util;
 
-public class GoogleCrawlingUtils {
+public class CrawlingUtils {
     public static final String GOOGLE_SEARCH = "https://www.google.com/search";
 }

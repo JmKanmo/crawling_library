@@ -1,16 +1,17 @@
-package api.crawler.google;
+package api.crawler;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class GoogleSearchCrawlingController {
-    // 실질적인 크롤링 작업 담당 (crawler package 내에서)
-
+/**
+ * crawling controller
+ * author: JmKanmo
+ */
+public class SearchCrawler {
     private static String selectRcList(Document document) {
         return null;
     }

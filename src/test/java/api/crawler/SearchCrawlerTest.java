@@ -1,15 +1,12 @@
-package api.crawler.google;
+package api.crawler;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.junit.Test;
 import java.io.IOException;
 
-import static org.junit.Assert.*;
-
-public class GoogleSearchCrawlingControllerTest {
+public class SearchCrawlerTest {
     @Test
     public void testSelectRcTest() throws IOException {
         Document document = Jsoup.connect("https://www.google.com/search?q=아이유 좋은날").get();
