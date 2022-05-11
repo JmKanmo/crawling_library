@@ -1,10 +1,6 @@
-urls:
-  - https://www.google.com
-  - https://www.naver.com
-
 crawlers:
   - site: google
-    url: https://www.google.com
+    url: https://www.google.com/
     search: search?
     keyword: q
     category: tbm
