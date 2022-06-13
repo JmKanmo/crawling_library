@@ -3,23 +3,12 @@ package api.config.dto;
 import java.util.List;
 
 public class CrawlerConfig {
-    private List<String> urls;
     private List<Crawler> crawlers;
 
-    public CrawlerConfig() {
-    }
+    public CrawlerConfig() {}
 
-    public CrawlerConfig(List<String> urls, List<Crawler> crawlers) {
-        this.urls = urls;
+    public CrawlerConfig(List<Crawler> crawlers) {
         this.crawlers = crawlers;
-    }
-
-    public List<String> getUrls() {
-        return urls;
-    }
-
-    public void setUrls(List<String> urls) {
-        this.urls = urls;
     }
 
     public List<Crawler> getCrawlers() {
@@ -33,8 +22,7 @@ public class CrawlerConfig {
     @Override
     public String toString() {
         return "CrawlerConfig{" +
-                "urls=" + urls +
-                ", crawlers=" + crawlers +
+                "crawlers=" + crawlers +
                 '}';
     }
 }

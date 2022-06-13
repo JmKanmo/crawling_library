@@ -32,10 +32,11 @@ public class JsoupParser {
 
     public static void main(String[] args) {
         try {
-            String url = "https://www.google.com/search?q=아이유 좋은날";
+            String url = "https://www.popkontv.com/search/search_all.asp";
             Document document = Jsoup.connect(url).get();
             Element searchElement = document.getElementById("search");
             Element rhsElement = document.getElementById("rhs");
+            Element contentElement = document.getElementById("contents");
             System.out.println(document.title());
         } catch (Exception e) {
             e.printStackTrace();

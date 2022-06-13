@@ -19,7 +19,7 @@ public class CrawlingWorker {
     private static final JsoupParser jsoupParser = new JsoupParser();
 
     public Map<String, String> crawling(String topic, String keyword) {
-        Map<String, String> crawlingResult = new HashMap<>(); // Map<String,Map<String,DTO>> 방식으로 진행 
+        Map<String, String> crawlingResult = new HashMap<>(); // Map<String,Map<String,DTO>> 방식으로 진행
 
         crawlerMap.entrySet().forEach(entry -> {
             Crawler crawler = entry.getValue().stream().findFirst().get();
